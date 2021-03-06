@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Samuel Felton">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock - Placement Front-end Coding Test</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- IMAGE SOURCES-->
+  <!-- https://i.ibb.co/bFXRfc5/bulbasaur.jpg" -->
+  <!-- https://i.ibb.co/ZK8CYD8/charmander.jpg" -->          
+  <!-- https://i.ibb.co/HXWTGGV/squirtle.jpg" -->
+
+  <!-- CONTENT -->
+  <!-- Bulbasaur
+  When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.
+  Charmander
+  It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.
+  Squirtle
+  When it retracts its long neck into its shell, it squirts out water with vigorous force. -->
+
+  <!-- WRITE YOUR HTML HERE -->
+  <div class="content">
+    <div class="header">
+      <h1>Select a Pok&eacute;mon</h1>
+    </div>
+    <div id="main">
+      <div id="bulbasaur" class="pokemonCard">
+        <div>
+          <img src="https://i.ibb.co/bFXRfc5/bulbasaur.jpg" alt="Image of Bulbasaur, a green 4 legged pokemon wiht a large bulb on his back"/>
+        </div>
+        <div class="pokemonDesc">
+          <h2>Bulbasaur</h2>
+          <p>When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.</p>
+          <button id="selectBulba" onclick="chosenPokemon(0)">SELECT</button>
+        </div>
+      </div>
+      <div id="charmander" class="pokemonCard">
+        <div>
+          <img src="https://i.ibb.co/ZK8CYD8/charmander.jpg" alt="Image of Charmander, an orange, dragon like pokemon with fire on the end of his tail"/>
+        </div>
+        <div class="pokemonDesc">
+          <h2>Charmander</h2>
+          <p>It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.</p>
+          <button id="selectCharm" onclick="chosenPokemon(1)">SELECT</button>
+        </div>
+      </div>
+      <div id="squirtle" class="pokemonCard">
+        <div>
+          <img src="https://i.ibb.co/HXWTGGV/squirtle.jpg" alt="Image of Squirtle, a blue, turtle like animal with a curly tail and a large smile"/>
+        </div>
+        <div class="pokemonDesc">
+          <h2>Squirtle</h2>
+          <p>When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
+          <button id="selectSquir" onclick="chosenPokemon(2)">SELECT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var pokemonName = "bulbasaur"
+    // WRITE ANY JAVASCRIPT HERE
+    function chosenPokemon(pokemon){
+      var classes = ["bulbasaur", "charmander", "squirtle"];
+      var outputs = ["you chose Bulbasaur! (He's my favourite)", "Charmander? Nice!", "You picked Squirtle! He's super cute :D"]
+      
+      document.getElementById(pokemonName).classList.remove("pokemonChosen")
+      document.getElementById(classes[pokemon]).classList.add("pokemonChosen")
+      pokemonName = classes[pokemon]
+
+      alert(outputs[pokemon]);
+    }
+
+  </script>
+  
+</body>
+</html>

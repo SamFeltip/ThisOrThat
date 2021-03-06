@@ -1,0 +1,14 @@
+- What measures could you take to ensure this page is fully accessible?
+I have given the images alt text fields, so anyone who has difficulty seeing can use a screen reader to identify the images.
+I have ensured the web page is viewable on a large range of screen sizes (large and small), so anyone who views the page with large font will still have a good experience.
+
+- Would you make any changes to the page if you needed to display all 151 original Pokémon? If so, what are they and why would you make them?
+The page automatically displays the images in a 3xn grid, however if this page had 151 cards, I would make the image smaller, and show the pokemon in a list view instead of a grid. This would allow the user to view more Pokemon on the page at once.
+I would implement a search function to allow the user to search by name for a pokemon of their choosing. This would avoid the need to scroll through 151 images to find their chosen character.
+
+- Any other considerations?
+I would make the description text larger if I was making this design for my self. The reference image makes the description text slightly too hard to read in my estimation.
+I would implement an alternative image of Squirtle. The one chosen appears to be slightly less clear than the others, and so I would go for images that are higher resolution.
+
+Hope this is helpful, I look forward to hearing from you soon.
+-Sam Felton

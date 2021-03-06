@@ -1,0 +1,118 @@
+/* HEX VALUES FOR THE BODY BACKGROUND AND SELECT BUTTONS */
+/* #daeaea */
+/* #9bcc50 */
+/* #fd7d24 */
+/* #4592c4 */
+
+/* HEADING AND BODY FONT FAMILIES */
+/* "Palatino Linotype", "Book Antiqua", Palatino, serif; */
+/* sans-serif */
+
+/* WRITE YOUR FURTHER CSS HERE */
+
+
+body {
+    background-color: #daeaea;
+}
+
+.content{
+    margin: 50px auto;
+    width: 70%;
+    min-width: 700px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 70%;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+  }
+
+div {
+    border-radius: inherit;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    
+    
+}
+
+h2 {
+    font-size: 150%;
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    text-align: left;
+}
+
+.header{
+    padding: 10px;
+}
+
+img {
+    width:100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: left;
+    margin: 10px 0px;
+    height: 60px;
+}
+
+.pokemonCard{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0px 10px 20px;
+    padding-bottom: 10px;
+    width: 30%;
+    min-width: 160px;
+    
+}
+
+.pokemonChosen{
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.pokemonDesc{
+    padding: 5px 10px 5px;
+}
+
+#selectBulba{
+    background-color: #9bcc50;
+}
+
+#selectCharm{
+    background-color: #fd7d24;
+}
+
+#selectSquir{
+    background-color: #4592c4;
+}
+
+@media screen and (max-width: 700px){
+    .pokemonCard{
+        display: block;
+        width: 80%;
+        
+    }
+    .content{
+        width: 50%;
+        min-width: 270px;
+    }
+}
